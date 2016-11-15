@@ -1,0 +1,16 @@
+section(class="Layout")
+	section(class="Layout-antagonist")
+		each card in [1,2,3,4,5]
+			include ../card/template.jade
+	section(class="Layout-main")
+		div.Layout-status
+			each name in ["CarlosSz", "JuanDc"]
+				include ../status/template.jade
+		div.Layout-battle 
+			include ../battle/template.jade
+		div.Layout-phases
+			- text = "Baia baia, ese fue un muy buen golpe."
+			include ../phases/template.jade
+	section(class="Layout-player")
+		each card in [1,2,3,4,5]
+			include ../card/template.jade
